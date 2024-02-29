@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <a href="/" class="header-logo">
+        <img
+          src="/icons/header-logo.svg"
+          alt="black hexagon"
+          width="25"
+          height="28"
+        />
+        <h2 class="header-logo-title">henrik</h2>
+      </a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link is-current">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Pages</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Shop</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Blog</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">Video</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">New</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/" class="header-info">
+        <h2 class="header-info-title">Info</h2>
+        <img src="/icons/header-info-circle.svg" alt="black circle" />
+      </a>
+    </header>
+    <main class="content">
+      <h1 class="visually-hidden">Magazine</h1>
+      <section class="banner container">
+        <h2 class="visually-hidden">Hot news</h2>
+        <div class="banner-body">
+          <div class="banner-info info-title">
+            <time datetime="09-24">Sep 24</time>,&nbsp;<time datetime="2012"
+              >2012</time
+            >
+            / By Jenny Jensen /
+            <span class="banner-body-buttons"
+              ><button class="banner-body-kind-button button">Art</button
+              ><button class="banner-body-kind-button button">
+                Painting
+              </button></span
+            >
+          </div>
+          <h3 class="banner-title general-title">
+            8 Days of John Bryce home improvement just for you
+          </h3>
+          <div class="banner-body-description">
+            Tellus integer feugiat scelerisque varius sit amet volutpat
+            consequat mauris nunc congue nisi at ultrices mi tempus imperdiet
+            nulla malesuada pellentesque netus et malesuada
+          </div>
+        </div>
+          <img src="/img/banner-image.jpeg" alt="image of art" loading="lazy" class="banner-image" />
+      </section>
+      <section class="latest-posts container">
+        <div class="latest-posts-header">
+            <div class="lastest-posts-category-filter-block">
+                <h2 class="latest-posts-header-title">Latest Posts</h2>
+            <div class="latest-posts-header-filter">
+              Filter By Category:
+              <span class="latest-posts-header-buttons">
+                <button
+                    type="button"
+                    class="latest-posts-category-button button is-current"
+                >
+                    All</button
+                ><button type="button" class="latest-posts-category-button button">
+                    Design</button
+                ><button
+                    type="button"
+                    class="latest-posts-category-button button"
+                >
+                    Altyn
+                </button>
+            </span>
+            </div>
+          </div>
+          <div class="latest-posts-first-show-filter-block">
+            <a href="/" class="latest-posts-header-link">View All</a>
+            <div class="latest-posts-first-show-filter">
+              First show
+              <form class="latest-posts-form">
+                <label for="first-show" class="visually-hidden"
+                  >first-show</label
+                >
+                <select class="latest-posts-input" id="first-show">
+                  <option value="" disabled selected>Defualt</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="latest-posts-body">
+            <div class="latest-posts-card" style="grid-area: a">
+              <div class="latest-posts-card-image">
+                <img
+                  src="/img/latest posts/1.jpeg"
+                  alt="image of art"
+                  width="846"
+                  height="492" 
+                  loading="lazy"
+                />
+              </div>
+              <div class="latest-posts-card-body">
+                <div class="latest-posts-card-info info-title">
+                  <time datetime="10-24">Oct 24</time>,&nbsp;<time
+                    datetime="2012"
+                    >2012</time
+                  >
+                  /
+                  <button type="button" class="latest-posts-card-info-button button">
+                    Altyn
+                  </button>
+                </div>
+                <h2 class="latest-posts-card-title medium-title">
+                  Home of the big home kit skill of mix ups in tim
+                </h2>
+              </div>
+            </div>
+            <div class="latest-posts-card" style="grid-area: b; bottom: 80px; position:relative">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/2.jpeg"
+                    alt="image of art"
+                    width="846"
+                    height="841"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="03-24">Mar 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                        Design
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title medium-title">
+                    try out our best in the spot tops and tricks in
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: c">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/3.jpeg"
+                    alt="image of art"
+                    width="403"
+                    height="235"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="11-24">Nov 24</time>,&nbsp;<time
+                      datetime="2012"
+                      >2012</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                        Design
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    Read Always Falls Buttered Side tip
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: d">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/4.jpeg"
+                    alt="image of art"
+                    width="402"
+                    height="252"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="01-24">Jan 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                      Altyn
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    Design that makes our product good
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: e">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/5.jpeg"
+                    alt="image of art"
+                    width="402"
+                    height="269"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="04-24">Apr 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                        Design
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    Device that takes your product top
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: f">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/6.jpeg"
+                    alt="image of art"
+                    width="402"
+                    height="291"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="06-24">Jun 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                        Design
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    The opus of Tim Roth’s somber life
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: g">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/7.jpeg"
+                    alt="image of art"
+                    width="402"
+                    height="380"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="12-24">Dec 24</time>,&nbsp;<time
+                      datetime="2012"
+                      >2012</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                      Altyn
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    The best Blog out there today now
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: h">
+                <div class="latest-posts-card-image">
+                  <img
+                    src="/img/latest posts/8.jpeg"
+                    alt="image of art"
+                    width="402"
+                    height="541"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="02-24">Feb 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                      Altyn
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    Forever is longer than today is
+                  </h2>
+                </div>
+              </div>
+              <div class="latest-posts-card" style="grid-area: i">
+                  <img
+                    src="/img/latest posts/9.jpeg"
+                    alt="image of art"
+                    loading="lazy"
+                    class="latest-posts-card-image"
+                  />
+                <div class="latest-posts-card-body">
+                  <div class="latest-posts-card-info info-title">
+                    <time datetime="05-24">May 24</time>,&nbsp;<time
+                      datetime="2013"
+                      >2013</time
+                    >
+                    /
+                    <button type="button" class="latest-posts-card-info-button button">
+                      Altyn
+                    </button>
+                  </div>
+                  <h2 class="latest-posts-card-title general-subtitle">
+                    The pretty book of the lapua top
+                  </h2>
+                </div>
+              </div>
+          </div>
+      </section>
+      <section class="popular container">
+        <div class="popular-header">
+            <div class="popular-header-title">
+                <img src="/icons/header-logo.svg" alt="" class="popular-header-image" width="19" height="19">
+                <h2 class="popular-header-title-text">Popular</h2>
+            </div>
+            <div class="popular-header-nav-title">
+                <img src="/icons/star.svg" alt="" class="popular-header-nav-image" width="16" height="19">
+                <h2 class="popular-header-nav-title-text">Trending</h2>
+            </div>
+        </div>
+        <div class="popular-body">
+            <div class="popular-card-body">
+                <img src="./img/popular/1.jpeg" alt="box" class="popular-card-image" width="629" height="468" loading="lazy">
+                <div class="popular-card-info info-title">
+                  <time datetime="07-24">Jul 24</time>,&nbsp;<time
+                    datetime="2013"
+                    >2013</time
+                  >&nbsp;
+                  /
+                  &nbsp;
+                  <button type="button" class="popular-card-info-button button">
+                    Vision
+                  </button>
+                </div>
+                <h2 class="popular-card-title medium-title">
+                    A box with a new sheen of cool top
+                </h2>
+              </div>
+            <div class="popular-card-body">
+                <img src="./img/popular/2.jpeg" alt="two women standing under the towel" class="popular-card-image" width="629" height="468" loading="lazy">
+                <div class="popular-card-info info-title">
+                  <time datetime="08-24">Aug 24</time>,&nbsp;<time
+                    datetime="2013"
+                    >2013</time
+                  >&nbsp;
+                  /
+                  &nbsp;
+                  <button type="button" class="popular-card-info-button button">
+                    Vision
+                  </button>
+                </div>
+                <h2 class="popular-card-title medium-title">
+                    The greatest book read by our dads
+                </h2>
+              </div>
+              <ul class="popular-list">
+                <li class="popular-list-item">
+                    <button class="popular-list-button button">Source</button>
+                    <h3 class="popular-list-title general-subtitle">Old shirts to get used to</h3>
+                </li>
+                <li class="popular-list-item">
+                    <button class="popular-list-button button">Source</button>
+                    <h3 class="popular-list-title general-subtitle">Old shirts to get used to</h3>
+                </li>
+                <li class="popular-list-item">
+                    <button class="popular-list-button button">Source</button>
+                    <h3 class="popular-list-title general-subtitle">Red dress will be here for you</h3>
+                </li>
+                <li class="popular-list-item">
+                    <button class="popular-list-button button">Source</button>
+                    <h3 class="popular-list-title general-subtitle">For time is here move it now</h3>
+                </li>
+              </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
