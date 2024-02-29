@@ -320,7 +320,6 @@ h6 {
     flex-direction: column;
     row-gap: clamp(15px, 4.61vh, 37px);
 }
-
 .popular-header {
     display: flex;
     justify-content: space-between;
