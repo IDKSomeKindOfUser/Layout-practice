@@ -173,7 +173,6 @@ h6 {
 .banner {
     display: flex;
     justify-content: space-between;
-    /* column-gap: clamp(20px, 26.4vw, 507px); */
     padding-block: 45px;
     margin-bottom: 100px;
     border-bottom: var(--border);
@@ -182,7 +181,6 @@ h6 {
 .banner-body {
     position: relative;
     width: clamp(300px, 33vw, 633px);
-    /* max-width: clamp(700px, 45vw, 633px); */
     min-width: clamp(300px, 45vw, 633px);
 
 }
@@ -201,9 +199,6 @@ h6 {
 .banner-body-kind-button {
     border: var(--border);
 }
-/* .banner-title {
-    max-width: 633px;
-} */
 
 .banner-body-description {
     position: absolute;
@@ -215,9 +210,6 @@ h6 {
     line-height: 1.36;
 }
 .banner-image{
-    /* width: 100%; */
-    /* max-width: 590px; */
-
     height: 100%;
 }
 
@@ -280,8 +272,6 @@ h6 {
 .latest-posts-body {
     display: grid;
     width: 100%;
-    /* grid-template-columns: repeat(2fr, 1fr, 1fr);
-    grid-template-rows: repeat(2fr, 4fr, 3fr); */
     grid-template-areas: 
     'a a a a a a c c c g g g'
     'a a a a a a c c c g g g'
@@ -300,9 +290,6 @@ h6 {
 }
 .latest-posts-card-info{
     margin:  18px 0 9px 0;
-    /* display: flex;
-    flex-direction: column;
-    row-gap: 15px; */
 }
 .latest-posts-card-image{
     width: 100% !important;
