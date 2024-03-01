@@ -267,7 +267,6 @@ h6 {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-
 }
 .latest-posts-header-link {
     text-decoration: underline !important;
