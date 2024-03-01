@@ -77,6 +77,14 @@ h6 {
 .general-subtitle{
     border-bottom: var(--border);
 }
+.bottom-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: clamp(15px, 1.15vw, 22px);
+    font-weight: 400;
+    line-height: 1.36;
+}
 .button {
     display: inline-flex;
     align-items: center;
@@ -105,7 +113,12 @@ h6 {
     background-color: var(--color-white);
     color: var(--color-black);
 }
-
+.button.transparent{
+    background-color: transparent;
+}
+.button.transparent:hover{
+    background-color: var(--color-black);
+}
 /* header */
 
 .header {
@@ -182,12 +195,9 @@ h6 {
     position: relative;
     width: clamp(300px, 33vw, 633px);
     min-width: clamp(300px, 45vw, 633px);
-
 }
-.banner-info {
-    font-size: 11px;
-    line-height: 1;
-    text-transform: uppercase;
+.banner-body-description{
+    max-width: 480px;
 }
 .banner-info:not(:last-child) {
     margin-bottom: 18px;
@@ -199,19 +209,10 @@ h6 {
 .banner-body-kind-button {
     border: var(--border);
 }
-
-.banner-body-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 480px;
-    font-size: clamp(15px, 1.15vw, 22px);
-    font-weight: 400;
-    line-height: 1.36;
-}
 .banner-image{
     height: 100%;
 }
+
 
 
 /* latest-posts section */
@@ -288,6 +289,10 @@ h6 {
     'b b b b b b . . . i i i';      
     gap: 40px;
 }
+.latest-posts-card.big-card{
+    bottom: 80px;
+    position:relative
+}
 .latest-posts-card-info{
     margin:  18px 0 9px 0;
 }
@@ -305,6 +310,7 @@ h6 {
     display: flex;
     flex-direction: column;
     row-gap: clamp(15px, 4.61vh, 37px);
+    margin-bottom: 123px;
 }
 .popular-header {
     display: flex;
@@ -336,7 +342,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 468px;
+    max-height: clamp(350px, 24.38vw, 468px);
 }
 .popular-list-button:not(:last-child) {
     margin-bottom: 5px;
@@ -345,10 +351,30 @@ h6 {
     max-width: 277px;
 }
 
+/* book-presentation section */
+
+.book-presentation {
+    height: clamp(400px, 40vw, 771px);
+    background: url('/img/book-presentation-background.jpeg') center/cover no-repeat var(--color-white);
+    padding: 45px 90px;
+}
+.book-presentation-body {
+    position: relative;
+    max-width: clamp(250px, 31.5vw, 605px);
+    height: 100%;
+}
+.book-presentation-info:not(:last-child) {
+    margin-bottom: 11px;
+}
+.book-presentation-card-info-buttons {
+    display: inline-flex;
+    column-gap: 8px;
+}
 /* adaptive */
 
 @media (max-width: 1750px) {
-    .container {
+    .container,
+    .book-presentation {
         padding-inline: var(--container-padding-x);
       }
 }
@@ -365,8 +391,32 @@ h6 {
     .header-menu-link {
         height: 50px;
     }
-    .banner {
+    .banner,
+    .latest-posts,
+    .popular,
+    .book-presentation {
         padding-block: 20px;
+        margin-bottom: 30px;
+    }
+    .latest-posts-body {
+        grid-template-areas: 
+        'a a a a a a b b b b b b'
+        'a a a a a a b b b b b b'
+        'a a a a a a b b b b b b'
+        'a a a a a a b b b b b b'
+        'a a a a a a b b b b b b'
+        'a a a a a a b b b b b b'
+        'c c c d d d e e e f f f'
+        'c c c d d d e e e f f f'
+        'c c c d d d e e e f f f'
+        'g g g g h h h h i i i i'
+        'g g g g h h h h i i i i'
+        'g g g g h h h h i i i i'
+        'g g g g h h h h i i i i'
+        '. . . . h h h h . . . .';
+    }
+    .latest-posts-card.big-card{
+        bottom: 0;
     }
 }
 @media (max-width: 767px) {
@@ -402,4 +452,51 @@ h6 {
         width: 60%;
         height: auto;
      }
+     .latest-posts-body {
+        gap: 30px;
+        grid-template-areas: 
+        'a a a a a a'
+        'a a a a a a'
+        'a a a a a a'
+        'a a a a a a'
+        'a a a a a a'
+        'a a a a a a'
+        'b b b b b b'
+        'b b b b b b'
+        'b b b b b b'
+        'b b b b b b'
+        'b b b b b b'
+        'b b b b b b'
+        'b b b b b b'
+        'c c c d d d'
+        'c c c d d d'
+        'c c c d d d'
+        'e e e f f f'
+        'e e e f f f'
+        'e e e f f f'
+        'g g g i i i'
+        'g g g i i i'
+        'g g g i i i'
+        'g g g i i i'
+        '. h h h h .'
+        '. h h h h .'
+        '. h h h h .'
+        '. h h h h .';
+    }
+    .popular-body{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .popular-list{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .book-presentation-body{
+        max-width: 100%;
+    }
 }
