@@ -232,8 +232,8 @@ h6 {
 .latest-posts-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
+    text-transform: uppercase;
 }
 .lastest-posts-category-filter-block {
     display: flex;
@@ -260,12 +260,15 @@ h6 {
     row-gap: 40px;
 }
 .latest-posts-header-link {
+    text-align: right;
     text-decoration: underline !important;
 }
 .latest-posts-form {
     display: inline-flex;
 }
 .latest-posts-input {
+    text-align: center;
+    text-transform: uppercase;
     text-decoration: underline;
 }
 .latest-posts-body {
@@ -487,7 +490,7 @@ h6 {
     .banner,
     .latest-posts,
     .popular,
-    .book-presentation
+    .book-presentation,
     .hot-stuff-body {
         padding-block: 20px;
         margin-bottom: 30px;
